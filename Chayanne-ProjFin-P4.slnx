@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
   <Project Path="OneBountyPiece.Hub/OneBountyPiece.Hub.csproj" />
   <Project Path="OneBountyPiece.Shared/OneBountyPiece.Shared.csproj" />
 </Solution>
