@@ -1,1 +1,4 @@
-<Solution />
+<Solution>
+  <Project Path="OneBountyPiece.Hub/OneBountyPiece.Hub.csproj" />
+  <Project Path="OneBountyPiece.Shared/OneBountyPiece.Shared.csproj" />
+</Solution>
