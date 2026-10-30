@@ -1,7 +1,11 @@
-Autor: Chayanne Mejia C
+# ☠️ One Bounty Piece
 
-One Bounty Piece
+**Autor:** Chayanne Mejía C.
 
-Este proyecto busca facilitar la optencion de informacion por parte de la marina de modo que maximisa la eficiencia de caza de los viles piratas
-con metodos como lo es una pagina wed cuyo proposito es que los civiles informen sobre los avistamientos y posibles paraderos de los piratas
-estos informes seran administrados por la administracion, quien asignara a las autoridades competentes para dar caza a estos rufianes
+## 📌 Descripción del Proyecto
+*One Bounty Piece* es un sistema de información integral diseñado para la Marina, cuyo objetivo principal es optimizar y maximizar la eficiencia en la localización y captura de piratas a lo largo de los mares. 
+
+El sistema conecta tres clientes clave:
+1. **Portal Web para Civiles (Receptor):** Permite a los ciudadanos reportar de manera rápida y sencilla los avistamientos, ubicaciones y paraderos conocidos de barcos y piratas.
+2. **Aplicación Móvil para Soldados (Emisor):** Permite a los efectivos de la Marina en campo consultar avistamientos en tiempo real y actualizar la información, recompensas y fichas técnicas de los criminales.
+3. **Aplicación de Escritorio para la Administración:** Un panel de control centralizado desde el cual los altos mandos gestionan usuarios del sistema, asignan permisos y distribuyen las misiones de caza a las autoridades competentes según los reportes recibidos.
