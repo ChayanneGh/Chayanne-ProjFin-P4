@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
-public record ShightingsModel(
+public record ShightingMdl(
     int Shightting,
     string ReporterName,
     string TargerType,

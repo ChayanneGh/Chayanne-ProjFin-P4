@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
-public record AddressModel(
+public record AddressMdl(
     int Address,
     string Country,
     string Region

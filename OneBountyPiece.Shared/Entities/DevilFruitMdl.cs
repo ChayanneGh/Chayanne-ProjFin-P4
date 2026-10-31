@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
-public record DevilFruitModel(
+public record DevilFruitMdl(
     int IdDevilFruit,
     string Name,
     string Type,

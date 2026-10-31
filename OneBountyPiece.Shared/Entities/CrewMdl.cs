@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
-public record CrewModel(
+public record CrewMdl(
     int IdCrew,
     string Name,
     string JollyRogerUrl,

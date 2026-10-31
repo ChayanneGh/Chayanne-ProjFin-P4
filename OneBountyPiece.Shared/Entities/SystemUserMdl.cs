@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
-public record SystemUsersModel(
+public record SystemUserMdl(
     int IdSystemUser,
     string Name,
     string Password,

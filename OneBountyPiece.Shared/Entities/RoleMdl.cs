@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
-public record RolesModel(
+public record RoleMdl(
     int IdRole,
     string Description
     );

@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
-public record PermissionsModel(
+public record PermissionMdl(
     int IdPermission,
     string Name
     );
