@@ -12,7 +12,7 @@ public class RolePermissionSql
         "SELECT * FROM RolePermissions " +
         "WHERE IdRolePermission = @ IdRolePermission";
     public const string Update =
-        "UPDATE RolePermissions  IdRole = @IdRole, IdPermission = IdPermission " +
+        "UPDATE RolePermissions Set IdRole = @IdRole, IdPermission = IdPermission " +
         "WHERE IdRolePermission = @IdRolePermission";
 
     public const string Delete =

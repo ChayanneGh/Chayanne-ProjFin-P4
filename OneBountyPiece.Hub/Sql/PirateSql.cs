@@ -13,7 +13,7 @@ public class PirateSql
         "SELECT * FROM PiratesSql " +
         "WHERE IPirate = @ IPirate";
     public const string Update =
-        "UPDATE PiratesSql FName = @FName, LName = @LName, Age = @Age, IdAddress = IdAddress, Reward = @Reward, " +
+        "UPDATE PiratesSql Set FName = @FName, LName = @LName, Age = @Age, IdAddress = IdAddress, Reward = @Reward, " +
         "IdCrew = IdCrew, IdDevilFruit = @IdDevilFruit, Speciality = @Speciality " +
         "WHERE IPirate = @IPirate";
 

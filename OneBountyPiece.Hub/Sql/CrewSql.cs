@@ -12,7 +12,7 @@ public class CrewSql
         "SELECT * FROM Crews " +
         "WHERE IdCrew = @ IdCrew";
     public const string Update =
-        "UPDATE Crews Name = @Name, JollyRogerUrl = @JollyRogerUrl, TotalBounty = @TotalBounty " +
+        "UPDATE Crews Set Name = @Name, JollyRogerUrl = @JollyRogerUrl, TotalBounty = @TotalBounty " +
         "WHERE IdCrew = @IdCrew";
 
     public const string Delete =

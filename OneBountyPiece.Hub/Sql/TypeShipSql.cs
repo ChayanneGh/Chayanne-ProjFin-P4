@@ -13,7 +13,7 @@ public class TypeShipSql
         "SELECT * FROM TypeShips " +
         "WHERE IdTypeShip = @ IdTypeShip";
     public const string Update =
-        "UPDATE TypeShips Name = @Name, Length = @Length, Heigth = @Heigth, Width = @Widgth, NetWeight = @NetWeight, " +
+        "UPDATE TypeShips Set Name = @Name, Length = @Length, Heigth = @Heigth, Width = @Widgth, NetWeight = @NetWeight, " +
         "DeadWeiht = @DeadWeight, PassangerCapasity = PassangerCapasity, Description = @Description " +
         "WHERE IdTypeShip = @IdTypeShip";
 

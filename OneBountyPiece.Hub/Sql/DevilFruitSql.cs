@@ -12,7 +12,7 @@ public class DevilFruitSql
         "SELECT * FROM DevilFruits " +
         "WHERE IdDevilFruit = @ IdDevilFruit";
     public const string Update =
-        "UPDATE DevilFruits Name = @Name, Type = @Type, Description = @Description, IsAwakened = IsAwakened " +
+        "UPDATE DevilFruits Set Name = @Name, Type = @Type, Description = @Description, IsAwakened = IsAwakened " +
         "WHERE IdDevilFruit = @IdDevilFruit";
 
     public const string Delete =

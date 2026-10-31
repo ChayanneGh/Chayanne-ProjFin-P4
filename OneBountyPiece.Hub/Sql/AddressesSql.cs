@@ -12,7 +12,7 @@ public class AddressesSql
         "SELECT * FROM Addresses " +
         "WHERE IdAddress = @ IdAddress";
     public const string Update =
-        "UPDATE Addresses Country = @Country, Region = @Region " +
+        "UPDATE Addresses Set Country = @Country, Region = @Region " +
         "WHERE IdAddress = @IdAddress";
 
     public const string Delete =

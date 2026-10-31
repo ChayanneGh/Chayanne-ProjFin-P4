@@ -12,7 +12,7 @@
             "SELECT * FROM SystemUsers " +
             "WHERE IdSystemUser = @ IdSystemUser";
         public const string Update =
-            "UPDATE SystemUsers  Name = @Name, Password = @Password, IdRole = @IdRole, IsActive = @IsActive " +
+            "UPDATE SystemUsers Set Name = @Name, Password = @Password, IdRole = @IdRole, IsActive = @IsActive " +
             "WHERE IdSystemUser = @IdSystemUser";
 
         public const string Delete =
