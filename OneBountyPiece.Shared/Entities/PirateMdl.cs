@@ -1,7 +1,7 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
 public record PirateMdl(
-    int Pirate,
+    int IdPirate,
     string FName,
     string LName,
     int Age,

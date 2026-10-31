@@ -6,23 +6,23 @@ namespace OneBountyPiece.Hub.Service;
 
 public class RolePermissionSrv(SqlConnectionFactory factory)
 {
-    public async Task Create(RolePermissionsModel RolePermissionDto)
+    public async Task Create(RolePermissionMdl RolePermissionDto)
     {
         using var connection = factory.createConnection();
         await connection.ExecuteAsync(RolePermissionSql.Insert, RolePermissionDto);
     }
-    public async Task<IEnumerable<RolePermissionsModel>> Read()
+    public async Task<IEnumerable<RolePermissionMdl>> Read()
     {
         using var connection = factory.createConnection();
-        return await connection.QueryAsync<RolePermissionsModel>(RolePermissionSql.Select);
+        return await connection.QueryAsync<RolePermissionMdl>(RolePermissionSql.Select);
     }
 
-    public async Task<RolePermissionsModel> ReadOne(int Id)
+    public async Task<RolePermissionMdl> ReadOne(int Id)
     {
         using var connection = factory.createConnection();
-        return await connection.QueryFirstOrDefaultAsync<RolePermissionsModel>(RolePermissionSql.SelectById, new { Id });
+        return await connection.QueryFirstOrDefaultAsync<RolePermissionMdl>(RolePermissionSql.SelectById, new { Id });
     }
-    public async Task Update(RolePermissionsModel RolePermissionDto)
+    public async Task Update(RolePermissionMdl RolePermissionDto)
     {
         using var connection = factory.createConnection();
         await connection.ExecuteAsync(RolePermissionSql.Update, RolePermissionDto);

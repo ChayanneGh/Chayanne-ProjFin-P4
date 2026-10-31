@@ -1,7 +1,7 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
 public record TypeShipMdl(
-    int TypeShip,
+    int IdTypeShip,
     string Name,
     int Length,
     int Heigth,
