@@ -17,8 +17,4 @@
     <ProjectReference Include="..\OneBountyPiece.Shared\OneBountyPiece.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
