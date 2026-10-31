@@ -13,7 +13,7 @@ public class ShightingController(ShightingsSrv shightingsSrv) : ControllerBase
         return Ok();
     }
 
-    [HttpPut("{int}")]
+    [HttpPut("{Id}")]
     public async Task<IActionResult> Put(int Id, [FromBody] ShightingMdl shighting)
     {
         if (Id != shighting.IdShighting)
@@ -32,7 +32,7 @@ public class ShightingController(ShightingsSrv shightingsSrv) : ControllerBase
         return Ok(List);
     }
 
-    [HttpGet("{int}")]
+    [HttpGet("{Id}")]
     public async Task<IActionResult> GetById(int Id)
     {
         ShightingMdl shighting = await shightingsSrv.ReadOne(Id);
@@ -44,7 +44,7 @@ public class ShightingController(ShightingsSrv shightingsSrv) : ControllerBase
         return Ok(shighting);
     }
 
-    [HttpDelete("{int}")]
+    [HttpDelete("{Id}")]
     public async Task<IActionResult> Delete(int Id)
     {
         await shightingsSrv.Delete(Id);

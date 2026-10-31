@@ -16,7 +16,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok();
         }
 
-        [HttpPut("{int}")]
+        [HttpPut("{Id}")]
         public async Task<IActionResult> Put(int Id, [FromBody] DevilFruitMdl devilFruit)
         {
             if (Id != devilFruit.IdDevilFruit)
@@ -35,7 +35,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(List);
         }
 
-        [HttpGet("{int}")]
+        [HttpGet("{Id}")]
         public async Task<IActionResult> GetById(int Id)
         {
             DevilFruitMdl devilFruit = await devilFruitSrv.ReadOne(Id);
@@ -47,7 +47,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(devilFruit);
         }
 
-        [HttpDelete("{int}")]
+        [HttpDelete("{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             await devilFruitSrv.Delete(Id);

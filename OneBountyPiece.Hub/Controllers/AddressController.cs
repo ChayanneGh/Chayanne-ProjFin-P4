@@ -15,7 +15,7 @@ public class AddressController(AddressSrv addressSrv) : ControllerBase
         return Ok();
     }
 
-    [HttpPut("{int}")]
+    [HttpPut("{Id}")]
     public async Task<IActionResult> Put(int Id, [FromBody] AddressMdl address)
     {
         if (Id != address.IdAddress)
@@ -34,7 +34,7 @@ public class AddressController(AddressSrv addressSrv) : ControllerBase
         return Ok(List);
     }
 
-    [HttpGet("{int}")]
+    [HttpGet("{Id}")]
     public async Task<IActionResult> GetById(int Id)
     {
         AddressMdl address = await addressSrv.ReadOne(Id);
@@ -46,7 +46,7 @@ public class AddressController(AddressSrv addressSrv) : ControllerBase
         return Ok(address);
     }
 
-    [HttpDelete("{int}")]
+    [HttpDelete("{Id}")]
     public async Task<IActionResult> Delete(int Id)
     {
         await addressSrv.Delete(Id);

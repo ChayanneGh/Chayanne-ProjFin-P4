@@ -16,7 +16,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok();
         }
 
-        [HttpPut("{int}")]
+        [HttpPut("{Id}")]
         public async Task<IActionResult> Put(int Id, [FromBody] TypeShipMdl typeShip)
         {
             if (Id != typeShip.IdTypeShip)
@@ -35,7 +35,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(List);
         }
 
-        [HttpGet("{int}")]
+        [HttpGet("{Id}")]
         public async Task<IActionResult> GetById(int Id)
         {
             TypeShipMdl typeShip = await typeShipSrv.ReadOne(Id);
@@ -47,7 +47,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(typeShip);
         }
 
-        [HttpDelete("{int}")]
+        [HttpDelete("{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             await typeShipSrv.Delete(Id);

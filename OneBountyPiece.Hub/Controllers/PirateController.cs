@@ -16,7 +16,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok();
         }
 
-        [HttpPut("{int}")]
+        [HttpPut("{Id}")]
         public async Task<IActionResult> Put(int Id, [FromBody] PirateMdl pirate)
         {
             if (Id != pirate.IdPirate)
@@ -35,7 +35,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(List);
         }
 
-        [HttpGet("{int}")]
+        [HttpGet("{Id}")]
         public async Task<IActionResult> GetById(int Id)
         {
             PirateMdl pirate = await pirateSrv.ReadOne(Id);
@@ -47,7 +47,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(pirate);
         }
 
-        [HttpDelete("{int}")]
+        [HttpDelete("{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             await pirateSrv.Delete(Id);

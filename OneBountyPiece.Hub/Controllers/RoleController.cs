@@ -16,7 +16,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok();
         }
 
-        [HttpPut("{int}")]
+        [HttpPut("{Id}")]
         public async Task<IActionResult> Put(int Id, [FromBody] RoleMdl role)
         {
             if (Id != role.IdRole)
@@ -35,7 +35,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(List);
         }
 
-        [HttpGet("{int}")]
+        [HttpGet("{Id}")]
         public async Task<IActionResult> GetById(int Id)
         {
             RoleMdl role = await roleSrv.ReadOne(Id);
@@ -47,7 +47,7 @@ namespace OneBountyPiece.Hub.Controllers
             return Ok(role);
         }
 
-        [HttpDelete("{int}")]
+        [HttpDelete("{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             await roleSrv.Delete(Id);

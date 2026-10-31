@@ -16,7 +16,7 @@ public class CrewController(CrewSrv crewSrv) : ControllerBase
         return Ok();
     }
 
-    [HttpPut("{int}")]
+    [HttpPut("{Id}")]
     public async Task<IActionResult> Put(int Id, [FromBody] CrewMdl crew)
     {
         if (Id != crew.IdCrew)
@@ -35,7 +35,7 @@ public class CrewController(CrewSrv crewSrv) : ControllerBase
         return Ok(List);
     }
 
-    [HttpGet("{int}")]
+    [HttpGet("{Id}")]
     public async Task<IActionResult> GetById(int Id)
     {
         CrewMdl crew = await crewSrv.ReadOne(Id);
@@ -47,7 +47,7 @@ public class CrewController(CrewSrv crewSrv) : ControllerBase
         return Ok(crew);
     }
 
-    [HttpDelete("{int}")]
+    [HttpDelete("{Id}")]
     public async Task<IActionResult> Delete(int Id)
     {
         await crewSrv.Delete(Id);
