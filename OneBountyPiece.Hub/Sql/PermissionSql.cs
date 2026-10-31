@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Hub.Sql;
 
-public class PermissionsSql
+public class PermissionSql
 {
     public const string Insert =
         "INSERT INTO Permissions (Name) VALUES(@Name)";
