@@ -1,7 +1,7 @@
 ﻿namespace OneBountyPiece.Shared.Entities;
 
 public record ShightingMdl(
-    int Shightting,
+    int IdShighting,
     string ReporterName,
     string TargerType,
     int TargetId,
