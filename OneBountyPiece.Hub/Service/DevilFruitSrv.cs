@@ -4,7 +4,7 @@ using OneBountyPiece.Shared.Entities;
 
 namespace OneBountyPiece.Hub.Service;
 
-public class DevilFruitSrv(SqlConnectionFactory factory)
+public class DevilFruitSrv(CFactory factory)
 {
     public async Task Create(DevilFruitMdl DevilFruitDto)
     {

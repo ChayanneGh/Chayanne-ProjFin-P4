@@ -4,7 +4,7 @@ using OneBountyPiece.Shared.Entities;
 
 namespace OneBountyPiece.Hub.Service;
 
-public class CrewSrv(SqlConnectionFactory factory)
+public class CrewSrv(CFactory factory)
 {
     public async Task Create(CrewMdl CrewDto)
     {

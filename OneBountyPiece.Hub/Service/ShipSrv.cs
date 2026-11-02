@@ -4,7 +4,7 @@ using OneBountyPiece.Shared.Entities;
 
 namespace OneBountyPiece.Hub.Service;
 
-public class ShipSrv(SqlConnectionFactory factory)
+public class ShipSrv(CFactory factory)
 {
     public async Task Create(ShipMdl ShipDto)
     {

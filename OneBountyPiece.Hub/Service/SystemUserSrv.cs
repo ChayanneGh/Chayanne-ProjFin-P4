@@ -4,7 +4,7 @@ using OneBountyPiece.Shared.Entities;
 
 namespace OneBountyPiece.Hub.Service;
 
-public class SystemUserSrv(SqlConnectionFactory factory)
+public class SystemUserSrv(CFactory factory)
 {
     public async Task Create(SystemUserMdl SystemUserDto)
     {

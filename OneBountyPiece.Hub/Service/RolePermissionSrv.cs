@@ -4,7 +4,7 @@ using OneBountyPiece.Shared.Entities;
 
 namespace OneBountyPiece.Hub.Service;
 
-public class RolePermissionSrv(SqlConnectionFactory factory)
+public class RolePermissionSrv(CFactory factory)
 {
     public async Task Create(RolePermissionMdl RolePermissionDto)
     {

@@ -4,32 +4,32 @@ using OneBountyPiece.Shared.Entities;
 
 namespace OneBountyPiece.Hub.Service;
 
-public class PirateSrv(SqlConnectionFactory factory)
+public class PirateSrv(CFactory factory)
 {
     public async Task Create(PirateMdl PirateDto)
     {
         using var connection = factory.createConnection();
-        await connection.ExecuteAsync(PiratesSql.Insert, PirateDto);
+        await connection.ExecuteAsync(PirateSql.Insert, PirateDto);
     }
     public async Task<IEnumerable<PirateMdl>> Read()
     {
         using var connection = factory.createConnection();
-        return await connection.QueryAsync<PirateMdl>(PiratesSql.Select);
+        return await connection.QueryAsync<PirateMdl>(PirateSql.Select);
     }
 
     public async Task<PirateMdl> ReadOne(int Id)
     {
         using var connection = factory.createConnection();
-        return await connection.QueryFirstOrDefaultAsync<PirateMdl>(PiratesSql.SelectById, new { Id });
+        return await connection.QueryFirstOrDefaultAsync<PirateMdl>(PirateSql.SelectById, new { Id });
     }
     public async Task Update(PirateMdl PirateDto)
     {
         using var connection = factory.createConnection();
-        await connection.ExecuteAsync(PiratesSql.Update, PirateDto);
+        await connection.ExecuteAsync(PirateSql.Update, PirateDto);
     }
     public async Task Delete(int Id)
     {
         using var connection = factory.createConnection();
-        await connection.ExecuteAsync(PiratesSql.Delete, new { Id });
+        await connection.ExecuteAsync(PirateSql.Delete, new { Id });
     }
 }

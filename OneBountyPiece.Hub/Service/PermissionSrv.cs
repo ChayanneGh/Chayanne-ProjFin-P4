@@ -1,9 +1,10 @@
-﻿using OneBountyPiece.Shared.Entities;
+﻿using Dapper;
 using OneBountyPiece.Hub.Sql;
-using Dapper;
+using OneBountyPiece.Shared.Entities;
+
 namespace OneBountyPiece.Hub.Service;
 
-public class PermissionSrv(SqlConnectionFactory factory)
+public class PermissionSrv(CFactory factory)
 {
     public async Task Create(PermissionMdl PermissionDto)
     {

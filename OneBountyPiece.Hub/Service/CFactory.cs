@@ -1,7 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 namespace OneBountyPiece.Hub.Service;
 
-public class SqlConnectionFactory(IConfiguration configuration)
+public class CFactory(IConfiguration configuration)
 {
     private readonly string _connectionString = configuration.GetConnectionString("OneBountyPiece");
     public SqlConnection createConnection()
