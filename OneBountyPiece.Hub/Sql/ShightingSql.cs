@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Hub.Sql;
 
-public class ShightingsSql
+public class ShightingSql
 {
     public const string Insert =
         "INSERT INTO Shightings (ReporterName, TargetType, TargerId, Description, IdAddress, ImageUrl, Status, CreateAt, AttendedBy) " +

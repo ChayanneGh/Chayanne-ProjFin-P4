@@ -1,6 +1,6 @@
 ﻿namespace OneBountyPiece.Hub.Sql;
 
-public class AddressesSql
+public class AddressSql
 {
     public const string Insert =
         "INSERT INTO Addresses (Country, Region) VALUES(@Country, @Region)";
